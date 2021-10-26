@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Survey Form page</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+   </head>
+<body>
+   <div id="banner">
+      <br>
+    <h1 id="title">Ficticional Clinic Inc.</h1>
+    <div class="container">
+      <p id="description"><em>Client Feedback: Your feedback will help us improve our services.</em>
+      </p>
+      <form action="submit-client-feedback" id="survey-form">
+          <label for="name" id="name-label" class="questions">1- First Name</label> <br>
+          <input type="text" required placeholder="Enter your first name" id="name" size="30px" class="text-box"><br>
+          <label for="age" id="number-label" class="questions">3- Age</label> <br>
+          <input type="number" min="18" max="99" placeholder="Enter your age" id="number" size="30px" class="text-box"><br>
+          <label for="email" id="email-label" class="questions">4- Email</label> <br>
+          <input type="email" required placeholder="Enter your email" id="email" size="30px" class="text-box">
+          <br>
+          <label for="healthcare" id="healthcare-label" class="questions">5- Which healthcare insurance plan do you use?</label> <br>
+            <label for="fictional"><input id="radio" type="radio" name="fictional-dont-other" value="fictional"> Fictional Clinic's healthcare</label>
+            <label for="other"><input id="radio" type="radio" name="fictional-dont-other" value="dont"> I don't have healthcare insurance</label>
+            <label for="other"><input id="radio" type="radio" name="fictional-dont-other" value="other"> Other</label><br>
+          <label for="services" id="services-label" class="questions">6- Select the services you used</label> <br>
+          <label for="dermatology"><input id="checkbox" type="checkbox" name="clinic-service" value="dermatology">Dermatology</label> <br>
+          <label for="ophthalmology"><input id="checkbox" type="checkbox" name="clinic-service" value="ophthalmology">Ophthalmology</label> <br>
+          <label for="pediatrics"><input id="checkbox" type="checkbox" name="clinic-service" value="pediatrics">Pediatrics</label> <br>
+          <label for="radiology"><input id="checkbox" type="checkbox" name="clinic-service" value="radiology">Radiology</label> <br>
+          <label for="urology"><input id="checkbox" type="checkbox" name="clinic-service" value="urology">Urology</label> 
+        <br>
+        <label for="rate" id="rate-label" class="questions">7- Rate our service</label> <br>
+        <div class="rate">
+            <select name="rate" id="dropdown">
+              <option value="ophthalmology">Good</option>
+              <option value="pediatrics">Neutral</option>
+              <option value="radiology">Bad</option>
+              </select> 
+          </div>  
+          <label for="comments" class="questions">8- Comments and suggestions</label> <br>
+          <textarea name="comments" id="comments" placeholder="Enter your comment here..."  cols="75" rows="1"></textarea> <br>
+          <button type="submit" id="submit">Submit</button> <br>
+          
+        </form>
+      </div>
+    </div>
+</body>
+</html>
